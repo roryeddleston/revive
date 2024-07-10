@@ -1,0 +1,46 @@
+{
+    "topBtn": "Back to top",
+    "menuTitle": "Menu",
+    "menuItems": [
+        {
+            "name": "About Us",
+            "url": "/about"
+        },
+        {
+            "name": "Events",
+            "url": "/events"
+        },
+        {
+            "name": "Meet the trustees",
+            "url": "/trustees"
+        },
+        {
+            "name": "Volunteer",
+            "url": "/volunteer"
+        },
+        {
+            "name": "Contact",
+            "url": "/contact"
+        }
+    ],
+        "address": {
+            "body": [
+                "The Foundry, Parvilles Farm,",
+                "Sparrows Lane,",
+                "Hatfield Heath,",
+                "Bishop’s Stortford,",
+                "Hertfordshire CM22 7AT,",
+                "United Kingdom"
+            ]
+        },
+        "contact": "Contact",
+        "newsletterTitle": "Want to know more?",
+        "newsletterText": "Sign up for our newsletter",
+        "icons": [
+            {
+                "name": "YouTube",
+                "url": "https://www.youtube.com/channel/UCqFrLvESE6uYBtqS-9IzoIA"
+            }
+        ],
+        "subscribeBtn": "Email"
+}

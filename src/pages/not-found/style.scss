@@ -1,0 +1,88 @@
+@import "../../styles/fonts";
+@import "../../styles/animations";
+@import "../../styles/colours";
+
+.not-found {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+
+    .intro-block {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        padding: 80px 0px 80px 0px;
+        text-align: center;
+    
+        .heading {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            margin: 0px;
+            width: 100%;
+            font-size: 60px;
+            font-weight: 600;
+            line-height: 75px;
+        }
+
+        @media only screen and (max-width: 1100px) {
+            .heading {
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 70px;
+            }
+        }
+
+        .paragraphs {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            margin: 40px 0px 0px 0px;
+
+            p {
+                box-sizing: border-box;
+                position: relative;
+                display: block;
+                margin: 44px 0px 0px 0px;
+                font-size: 19px;
+                font-weight: 400;
+                line-height: 30px;
+            }
+
+            p:first-child {
+                margin: 0px;
+            }
+        }
+
+        .buttons-holder {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            margin: 30px 0px 0px 0px;
+
+            .home-btn {
+                box-sizing: border-box;
+                position: relative;
+                display: block;
+                margin: 40px auto 0 auto;
+                padding: 12px 0;
+                max-width: 222px;
+                font-family: $poppins-semi-bold;
+                font-size: 16px;
+                line-height: 30px;
+                border-radius: 10px;
+                border: none;
+                background-color: #ffe5e5;
+                color: $primaryColor;
+                text-decoration: none;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            .home-btn:hover {
+                background-color: #fdd8d8;
+                transition: background-color 0.3s;
+            }
+        }
+    }
+}

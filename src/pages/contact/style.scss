@@ -1,0 +1,17 @@
+@import "../../styles/fonts";
+@import "../../styles/animations";
+@import "../../styles/colours";
+
+.contact {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+
+    .form-block {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        padding: 0px 30px;
+        margin: 0;
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "tabs": [
+        {
+            "name": "About Us",
+            "url": "/"
+        },
+        {
+            "name": "Events",
+            "url": "/events"
+        },
+        {
+            "name": "Meet the trustees",
+            "url": "/trustees"
+        },
+        {
+            "name": "Volunteer",
+            "url": "/volunteer"
+        },
+        {
+            "name": "Contact",
+            "url": "/contact"
+        }
+    ]
+}

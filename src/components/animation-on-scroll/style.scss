@@ -1,0 +1,17 @@
+@import "../../styles/fonts";
+@import "../../styles/animations";
+
+
+.animation-on-scroll {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    top: 100px;
+    opacity: 0;
+    transition: top 1s ease-out, opacity 1s ease;
+}
+
+.animation-on-scroll.show {
+    top: 0px;
+    opacity: 1;
+}

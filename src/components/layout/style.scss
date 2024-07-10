@@ -1,0 +1,30 @@
+@import "../../styles/fonts";
+@import "../../styles/animations";
+
+.layout {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    margin: 0px auto;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: #ffffff;
+
+    .content {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        animation: fadeIn 0.5s ease-in;
+
+        .inner-content {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            margin: 0px auto;
+            padding: 0px 20px;
+            width: 100%;
+            max-width: 1600px;
+        }
+    }
+}

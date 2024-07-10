@@ -1,0 +1,235 @@
+@import "../../styles/fonts";
+@import "../../styles/animations";
+@import "../../styles/colours";
+
+.topbar {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    left: auto;
+    top: 0px;
+    width: 100%;
+    height: 220px;
+    background-color: $primaryColor;
+
+    .inner {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        margin: 0px auto;
+        padding: 0px 25px;
+        width: 100%;
+        max-width: 1200px;
+
+        .logo {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            width: 100%;
+            max-width: 184px;
+            height: 184px;
+            margin: 0 auto;
+            background-image: url('../../media/imgs/revive_logo.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            text-decoration: none;
+        }
+
+        .tabs {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            width: 100%;
+            text-align: center;
+
+            .tab {
+                box-sizing: border-box;
+                position: relative;
+                display: inline-block;
+                font-family: $poppins-semi-bold;
+                vertical-align: bottom;
+                min-width: 90px;
+                font-size: 18px;
+                line-height: 20px;
+                letter-spacing: 0.6px;
+                text-decoration: none;
+                text-align: center;
+                color: $purpleColor;
+                height: 100%;
+                padding: 0 40px;
+
+            }
+
+            .tab:hover {
+                color: $secondaryColor;
+            }
+
+            .active {
+                color: $secondaryColor;
+            }
+        }
+    }
+
+    .overlay {
+        box-sizing: border-box;
+        position: absolute;
+        display: block;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        pointer-events: none;
+
+        .panel {
+            box-sizing: border-box;
+            position: absolute;
+            display: block;
+            padding: 116px 0px 0px 0px;
+            right: -620px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            max-width: 620px;
+            background-color: $primaryColor;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            pointer-events: auto;
+            transition: right 0.5s;
+            z-index: 110;
+
+            .tabs {
+                box-sizing: border-box;
+                position: relative;
+                display: block;
+                padding: 0px 20px;
+                text-align: center;
+                margin-top: 30px;
+
+                .tab {
+                    box-sizing: border-box;
+                    position: relative;
+                    display: block;
+                    margin: 30px 0px 0px 0px;
+                    width: 100%;
+                    border-radius: 10px;
+                    // background-color: $secondaryColor; /* For browsers that do not support gradients */
+                    // background-image: linear-gradient(to top right, #ffe5e5, #e2a8b6);
+                    background-color: $purpleColor;
+                    text-decoration: none;
+                    cursor: pointer;
+
+                    .text {
+                        box-sizing: border-box;
+                        position: relative;
+                        display: block;
+                        padding: 26px;
+                        border: none;
+                        outline: none;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 9px;
+                        color: $primaryColor;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                }
+
+                .tab:first-child {
+                    margin: 0px;
+                }
+
+                .tab:hover {
+                    .text {
+                        background-color: #FFFFFF; /* For browsers that do not support gradients */
+                        background-image: none;
+                        color: $secondaryColor;
+                    }
+                }
+            }
+        }
+    }
+
+    .overlay.open {
+        .panel {
+            right: 0px;
+        }
+    }
+
+    .menu-btn {
+        box-sizing: border-box;
+        position: absolute;
+        display: none;
+        right: 44px;
+        top: 35px;
+        width: 54px;
+        height: 54px;
+        cursor: pointer;
+        z-index: 111;
+
+        .line {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            background: $purpleColor;
+            width: 40px;
+            height: 4px;
+            display: block;
+            margin: 8px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    .menu-btn:hover {
+        .line {
+            background: $secondaryColor;
+        }
+    }
+
+    .menu-btn.active .line2{
+        opacity: 0;
+      }
+
+      .menu-btn.active .line1{
+        -webkit-transform: translateY(12px) rotate(45deg);
+        -ms-transform: translateY(12px) rotate(45deg);
+        -o-transform: translateY(12px) rotate(45deg);
+        transform: translateY(12px) rotate(45deg);
+      }
+
+      .menu-btn.active .line3{
+        -webkit-transform: translateY(-12px) rotate(-45deg);
+        -ms-transform: translateY(-12px) rotate(-45deg);
+        -o-transform: translateY(-12px) rotate(-45deg);
+        transform: translateY(-12px) rotate(-45deg);
+      }
+
+
+
+
+
+
+
+    @media only screen and (max-width: 900px) {
+        .inner {
+            .tabs {
+                display: none;
+            }
+        }
+
+        .menu-btn {
+            display: block;
+        }
+    }
+
+    @media only screen and (max-width: 1300px) {
+        .logo {
+            margin-left: 30px;
+        }
+    }
+
+
+}
+
+

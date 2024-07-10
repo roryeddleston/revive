@@ -1,0 +1,88 @@
+@import "../../styles/fonts";
+@import "../../styles/animations";
+
+
+.accordion {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+
+    .bar {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        border-top: 1px solid #000000;
+
+        .heading {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            padding: 15px 80px 15px 0px;
+            cursor: pointer;
+
+            .title {
+                box-sizing: border-box;
+                position: relative;
+                display: block;
+                font-size: 20px;
+                text-align: left;
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 70px;
+                pointer-events: none;
+            }
+
+            .arrow {
+                box-sizing: border-box;
+                position: absolute;
+                display: block;
+                right: 30px;
+                top: 41px;
+                width: 32px;
+                height: 18px;
+                background-image: url("data:image/svg+xml,%3Csvg width='32' height='18' viewBox='0 0 32 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.838867 0.946289L15.9463 16.0537L31.0537 0.946289' stroke='black' stroke-width='2'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center;
+                transition: transform 0.5s ease;
+                pointer-events: none;
+            }
+        }
+
+        .heading:hover {
+            .title {
+                color: #FF841A;
+            }
+        }
+
+        .reveal {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            overflow: hidden;
+            height: 0px;
+            transition: height 0.5s ease;
+
+            .height-wrapper {
+                box-sizing: border-box;
+                position: relative;
+                display: block;
+            }
+        }
+    }
+
+    .bar.seen {
+        .heading {
+            background-color: #cccccc;
+        }
+    }
+
+    .bar.active {
+        .heading {
+            .arrow {
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+            }
+        }
+    }
+}

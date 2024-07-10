@@ -1,0 +1,10 @@
+{
+    "intro": {
+        "heading": "Page not found.",
+        "body": [
+            "It looks like the link you clicked has taken you to the wrong place!",
+            "Click the button below to return to the home page."
+        ],
+        "homeBtn": "Home"
+    }
+}

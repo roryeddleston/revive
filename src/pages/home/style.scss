@@ -1,0 +1,60 @@
+@import "../../styles/fonts";
+@import "../../styles/animations";
+@import "../../styles/colours";
+
+.home {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+
+    .intro-block {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        padding: 80px 30px;
+        background-color: $primaryColor;
+        color: $purpleColor;
+        min-height: 100%;
+
+        span {
+            font-weight: 700;
+        }
+
+        .heading {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            font-size: 80px;
+            line-height: 64px;
+            letter-spacing: 0.78px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .paragraphs {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            padding-top: 30px;
+            text-align: center;
+            max-width: 535px;
+            line-height: 29px;
+            letter-spacing: 0.6px;
+            margin: 0 auto;
+        }
+    }
+
+    @media only screen and (max-width: 720px) {
+
+        .intro-block {
+            padding: 50px 30px;
+
+            .heading {
+                font-size: 54px;
+            }
+            .paragraphs {
+                padding-top: 20px;
+            }
+        }
+    }
+}

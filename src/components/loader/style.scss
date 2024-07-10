@@ -1,0 +1,23 @@
+@import "../../styles/fonts";
+@import "../../styles/animations";
+
+.loader {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    padding: 200px 0px;
+    width: 100%;
+
+    .circle {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        margin: 0px auto;
+        border: 3px solid #F5F5F5;
+        border-top: 3px solid #FF841A;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        animation: spin 2s linear infinite;
+    }
+}

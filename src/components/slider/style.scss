@@ -1,0 +1,148 @@
+@import "../../styles/fonts";
+@import "../../styles/animations";
+
+
+.slider {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+
+    .nav-btns {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+
+        .prev-btn {
+            box-sizing: border-box;
+            position: relative;
+            display: inline-block;
+            vertical-align: bottom;
+            border-radius: 30px;
+            padding: 3px;
+            width: 60px;
+            height: 60px;
+            background-color: #FF841A; /* For browsers that do not support gradients */
+            background-image: linear-gradient(to top right, #FF841A, #FC6C5A);
+            pointer-events: auto;
+            cursor: pointer;
+
+            .inner-area {
+                box-sizing: border-box;
+                position: relative;
+                display: block;
+                border-radius: 27px;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                transition: background 0.3s;
+
+                .arrow {
+                    box-sizing: border-box;
+                    position: absolute;
+                    display: block;
+                    left: 15px;
+                    top: 19px;
+                    width: 23px;
+                    height: 17px;
+                    background-image: url("data:image/svg+xml,%3Csvg width='23' height='17' viewBox='0 0 23 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23 7.03629L5.5272 7.03629L12.1378 -9.41475e-07L7.98418 -2.03083e-06L3.22506e-07 8.49781L7.98418 17L12.1337 17L5.52719 9.9637L23 9.96371L23 7.03629Z' fill='white'/%3E%3C/svg%3E%0A");
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    background-position: center;
+                    pointer-events: none;
+                }
+            }
+        }
+
+        .prev-btn:hover {
+            .inner-area {
+                background: #ffffff;
+
+                .arrow {
+                    background-image: url("data:image/svg+xml,%3Csvg width='23' height='17' viewBox='0 0 23 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23 7.03629L5.5272 7.03629L12.1378 -9.41475e-07L7.98418 -2.03083e-06L3.22506e-07 8.49781L7.98418 17L12.1337 17L5.52719 9.9637L23 9.96371L23 7.03629Z' fill='url(%23paint0_linear_195_99)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_195_99' x1='1.65911' y1='15.979' x2='15.2238' y2='3.62745' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF841A'/%3E%3Cstop offset='1' stop-color='%23FC6C5A'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+                }
+            }
+        }
+
+        .next-btn {
+            box-sizing: border-box;
+            position: relative;
+            display: inline-block;
+            vertical-align: bottom;
+            border-radius: 30px;
+            margin: 0px 0px 0px 14px;
+            padding: 3px;
+            width: 60px;
+            height: 60px;
+            background-color: #FF841A; /* For browsers that do not support gradients */
+            background-image: linear-gradient(to top right, #FF841A, #FC6C5A);
+            pointer-events: auto;
+            cursor: pointer;
+            transition: width 0.3s;
+
+            .inner-area {
+                box-sizing: border-box;
+                position: relative;
+                display: block;
+                border-radius: 27px;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                transition: background 0.3s;
+
+                .arrow {
+                    box-sizing: border-box;
+                    position: absolute;
+                    display: block;
+                    right: 15px;
+                    top: 19px;
+                    width: 23px;
+                    height: 17px;
+                    background-image: url("data:image/svg+xml,%3Csvg width='23' height='17' viewBox='0 0 23 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-1.74211e-06 9.96371L17.4728 9.96371L10.8622 17L15.0158 17L23 8.50219L15.0158 2.62545e-06L10.8663 1.89993e-06L17.4728 7.0363L-1.23026e-06 7.03629L-1.74211e-06 9.96371Z' fill='white'/%3E%3C/svg%3E%0A");
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    background-position: center;
+                    pointer-events: none;
+                }
+            }
+        }
+
+        .next-btn:hover {
+            width: 120px;
+
+            .inner-area {
+                background: #ffffff;
+
+                .arrow {
+                    background-image: url("data:image/svg+xml,%3Csvg width='23' height='17' viewBox='0 0 23 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-1.74211e-06 9.96371L17.4728 9.96371L10.8622 17L15.0158 17L23 8.50219L15.0158 2.62545e-06L10.8663 1.89993e-06L17.4728 7.0363L-1.23026e-06 7.03629L-1.74211e-06 9.96371Z' fill='url(%23paint0_linear_195_99)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_195_99' x1='1.65911' y1='15.979' x2='15.2238' y2='3.62745' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF841A'/%3E%3Cstop offset='1' stop-color='%23FC6C5A'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+                }
+            }
+        }
+    }
+
+    .masker {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        margin: 45px 0px 0px 0px;
+        width: 100%;
+        overflow: hidden;
+
+        .slides {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            white-space: nowrap;
+            left: 0px;
+            transition: left 0s;
+
+            .slide {
+                box-sizing: border-box;
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                width: 100%;
+                white-space: normal;
+            }
+        }
+    }
+}
