@@ -7,54 +7,125 @@
     position: relative;
     display: block;
 
-    .intro-block {
-        box-sizing: border-box;
-        position: relative;
-        display: block;
-        padding: 80px 30px;
-        background-color: $primaryColor;
-        color: $purpleColor;
-        min-height: 100%;
+    .intro-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        overflow: hidden;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 0 25px 100px 25px;
 
-        span {
-            font-weight: 700;
+        @media only screen and (max-width: 1100px) {
+            flex-direction: column;
+            height: auto;
         }
 
-        .heading {
+        .intro-block-1, .intro-block-2 {
             box-sizing: border-box;
-            position: relative;
-            display: block;
-            font-size: 80px;
-            line-height: 64px;
-            letter-spacing: 0.78px;
-            text-align: center;
-            margin: 0;
+            flex: 1;
+            overflow: hidden;
         }
 
-        .paragraphs {
-            box-sizing: border-box;
+        .intro-block-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $purpleColor;
+            color: white;
+            border-radius: 20px;
+            margin-right: 25px;
+            padding: 30px;
+
+            @media only screen and (max-width: 1100px) {
+                margin: 35px 0 35px 0;
+            }
+
+            span {
+                h2 {
+                    font-family: $sora-extra-bold;
+                }
+            }
+
+            .heading {
+                font-size: 80px;
+                letter-spacing: 0.78px;
+                text-align: center;
+                margin: 0;
+                padding: 0 40px;
+            }
+            @media only screen and (max-width: 1100px) {
+                .heading {
+                    font-size: 55px;
+                }
+            }
+
+            .paragraphs {
+                text-align: center;
+                max-width: 335px;
+                line-height: 29px;
+                letter-spacing: 0.6px;
+                margin: 0 auto;
+            }
+        }
+
+        .intro-block-2 {
+            flex: 1.4;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            background-color: white;
+            border-radius: 20px;
             position: relative;
-            display: block;
-            padding-top: 30px;
-            text-align: center;
-            max-width: 535px;
-            line-height: 29px;
-            letter-spacing: 0.6px;
-            margin: 0 auto;
+
+            img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+
+            .donate-btn {
+                position: absolute;
+                box-sizing: border-box;
+                display: block;
+                bottom: 35px;
+                right: 35px;
+                padding: 20px;
+                background-color: $secondaryColor;
+                color: white;
+                border: none;
+                width: 176px;
+                border-radius: 16px;
+                font-family: $sora-semi-bold;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: white;
+                    color: $secondaryColor;
+                }
+            }
         }
     }
 
     @media only screen and (max-width: 720px) {
-
-        .intro-block {
-            padding: 50px 30px;
+        .intro-block-1 {
+            padding: 30px;
+            margin-right: 0;
 
             .heading {
                 font-size: 54px;
             }
+
             .paragraphs {
                 padding-top: 20px;
             }
+        }
+
+        .intro-block-2 {
+            margin-top: 25px;
         }
     }
 }

@@ -9,8 +9,17 @@ export default function Volunteer(props) {
 
     return (
         <div className="volunteer">
-            <Layout>
-
+            <Layout pageId={3}>
+                <div className="volunteer-container">
+                    <h2 className="heading" dangerouslySetInnerHTML={{ __html: config.volunteer.heading }}></h2>
+                    <div className="paragraphs">
+                    {config.volunteer.body.map((paragraph, key) => {
+                        return (
+                        <p key={key} dangerouslySetInnerHTML={{ __html: paragraph }}></p>
+                        );
+                    })}
+                    </div>
+                </div>
             </Layout>
         </div>
     )

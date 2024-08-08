@@ -1,3 +1,29 @@
 {
-
-}
+    "trusteesTitle": "Meet the Trustees",
+    "trusteesText": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada odio et ultrices pharetra. Sed a imperdiet tellus. Morbi a pretium nisi. In accumsan efficitur diam, nec porttitor orci pretium vitae. Phasellus eget vulputate dui, et dictum dolor. Vivamus rutrum commodo odio, ut auctor leo porttitor nec. Etiam at viverra enim, quis dictum sapien. "
+    ],
+    "trustees": [
+      {
+        "name": "Trustee 1",
+        "image": "path/to/image1.jpg",
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et."
+      },
+      {
+        "name": "Trustee 2",
+        "image": "path/to/image2.jpg",
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et."
+      },
+      {
+        "name": "Trustee 3",
+        "image": "path/to/image3.jpg",
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et."
+      },
+      {
+        "name": "Trustee 4",
+        "image": "path/to/image4.jpg",
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et."
+      }
+    ]
+  }

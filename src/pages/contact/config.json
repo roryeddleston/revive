@@ -1,12 +1,12 @@
 {
+    "intro": {
+        "heading": "Get in touch"
+    },
     "form": {
         "heading": "Contact us",
         "body": "Have a question or comment? Enter your details and we'll be happy to get back to you.",
         "first": "Name",
-        "phone": "Phone",
-        "question": "Which name best suits your leadership style? (There is no right or wrong answer!)",
         "email": "Email",
-        "style": "Which name best suits your leadership style?",
         "comments": "Comments",
         "submitBtn": "Send"
     }

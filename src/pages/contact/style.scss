@@ -2,16 +2,97 @@
 @import "../../styles/animations";
 @import "../../styles/colours";
 
-.contact {
+.contact-form {
     box-sizing: border-box;
     position: relative;
     display: block;
+    border-radius: 8px;
+    width: 100%;
 
-    .form-block {
-        box-sizing: border-box;
-        position: relative;
-        display: block;
-        padding: 0px 30px;
-        margin: 0;
+    .heading {
+      box-sizing: border-box;
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 40px;
+      padding-top: 30px;
     }
+
+    form {
+      box-sizing: border-box;
+      position: relative;
+      display: block;
+      margin: 0px auto;
+      max-width: 600px;
+      padding:  50px 20px 100px 20px;
+      display: flex;
+      flex-direction: column;
 }
+
+    label {
+      margin-bottom: 20px;
+      font-size: 1rem;
+      color: #333;
+
+      input,
+      textarea {
+        // box-sizing: border-box;
+        // position: relative;
+        // display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+        resize: vertical;
+      }
+
+      input[type="checkbox"] {
+        width: auto;
+        margin-top: 0;
+      }
+    }
+
+    button {
+        position: relative;
+        box-sizing: border-box;
+        display: block;
+        padding: 20px;
+        margin-top: 20px;
+        background-color: $secondaryColor;
+        color: white;
+        border: none;
+        width: 176px;
+        border-radius: 16px;
+        font-family: $sora-semi-bold;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: white;
+            color: $secondaryColor;
+        }
+
+    }
+
+    @media (max-width: 600px) {
+      padding: 10px;
+
+      label {
+        font-size: 0.9rem;
+
+        input,
+        textarea {
+          font-size: 0.9rem;
+        }
+      }
+
+      button {
+        font-size: 0.9rem;
+      }
+    }
+  }
+

@@ -7,7 +7,6 @@ import Footer from "../footer/main";
 export default function Layout(props) {
     return (
         <div className="layout">
-            
             <Topbar pageId={props.pageId}/>
 
             <div className="content">
@@ -15,7 +14,6 @@ export default function Layout(props) {
             </div>
 
             <Footer />
-
         </div>
     )
 }

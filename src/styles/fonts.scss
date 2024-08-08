@@ -1,36 +1,36 @@
-$dm-sans:  'DM Sans', sans-serif;
-$poppins-black: 'Poppins-Black', sans-serif;
-$poppins-semi-bold: 'Poppins-Semi-Bold', sans-serif;
+$sora-regular:  'Sora-Regular', sans-serif;
+$sora-extra-bold: 'Sora-ExtraBold', sans-serif;
+$sora-semi-bold: 'Sora-SemiBold', sans-serif;
 
 
 @font-face {
-    font-family: 'DM Sans';
-    src: url('./fonts/DMSans24pt-Regular.eot');
-    src: url('./fonts/DMSans24pt-Regular.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/DMSans24pt-Regular.woff2') format('woff2'),
-        url('./fonts/DMSans24pt-Regular.woff') format('woff');
+    font-family: 'Sora-Regular';
+    src: url('./fonts/Sora-Regular.eot');
+    src: url('./fonts/Sora-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Sora-Regular.woff2') format('woff2'),
+        url('./fonts/Sora-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 
 @font-face {
-    font-family: 'Poppins-Black';
-    src: url('./fonts/Poppins-Black.eot');
-    src: url('./fonts/Poppins-Black.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/Poppins-Black.woff2') format('woff2'),
-        url('./fonts/Poppins-Black.woff') format('woff');
+    font-family: 'Sora-ExtraBold';
+    src: url('./fonts/Sora-ExtraBold.eot');
+    src: url('./fonts/Sora-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Sora-ExtraBold.woff2') format('woff2'),
+        url('./fonts/Sora-ExtraBold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 
 @font-face {
-    font-family: 'Poppins-Semi-Bold';
-    src: url('./fonts/Poppins-SemiBold.eot');
-    src: url('./fonts/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/Poppins-SemiBold.woff2') format('woff2'),
-        url('./fonts/Poppins-SemiBold.woff') format('woff');
+    font-family: 'Sora-SemiBold';
+    src: url('./fonts/Sora-SemiBold.eot');
+    src: url('./fonts/Sora-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Sora-SemiBold.woff2') format('woff2'),
+        url('./fonts/Sora-SemiBold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

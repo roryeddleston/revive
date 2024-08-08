@@ -7,7 +7,9 @@
     position: relative;
     display: block;
     padding: 50px 0px;
-    background-color: $primaryColor;
+    background-color: rgba(255, 255, 255, 0.97);
+    border-radius: 20px;
+    margin-top: 30px;
 
     .inner {
         box-sizing: border-box;
@@ -15,13 +17,14 @@
         display: block;
         margin: 0px auto;
         width: 100%;
-        max-width: 1200px;
+        max-width: 1000px;
 
         .columns {
             box-sizing: border-box;
             position: relative;
             display: flex;
             padding: 0 30px;
+            justify-content: space-between;
 
         .col {
             box-sizing: border-box;
@@ -32,98 +35,82 @@
                 box-sizing: border-box;
                 position: relative;
                 display: block;
-                font-family: $poppins-semi-bold;
+                font-family: $sora-semi-bold;
                 margin: 0 0 25px 0;
-                color: #ffffff;
                 font-size: 21px;
                 line-height: 29px;
                 letter-spacing: 0.78px;
-            }
-
-            .col-address {
-                box-sizing: border-box;
-                position: relative;
-                display: block;
-                margin: 0px;
-                color: #ffffff;
-
-                p {
-                    box-sizing: border-box;
-                    position: relative;
-                    display: block;
-                    font-size: 14px;
-                    line-height: 26px;
-                    letter-spacing: 0.6px;
-                    margin: 0;
-                    padding: 0;
-                }
             }
 
             .col-newsletter {
                 box-sizing: border-box;
                 position: relative;
                 display: block;
-                color: #ffffff;
                 font-size: 14px;
                 line-height: 26px;
                 letter-spacing: 0.6px;
-                margin: 0;
-                padding: 0;
             }
 
-                .buttons-holder {
-                    box-sizing: border-box;
-                    position: relative;
-                    display: block;
-                    margin: 15px 0px 0px 0px;
+            .buttons-holder {
+                box-sizing: border-box;
+                position: relative;
+                display: block;
+                margin: 15px 0px 0px 0px;
 
-                    .subscribe-btn {
-                        box-sizing: border-box;
-                        position: relative;
-                        display: block;
-                        padding: 3px 10px;
-                        border-radius: 8px;
-                        width: 100%;
-                        max-width: 326px;
-                        background-color: #FFE5E5;
-                        cursor: pointer;
-                        margin-bottom: 50px;
-
-                        input {
-                            box-sizing: border-box;
-                            position: relative;
-                            display: block;
-                            font-family: $dm-sans;
-                            padding: 10px;
-                            font-size: 15px;
-                            letter-spacing: 1px;
-                            line-height: 24px;
-                            border: none;
-                            outline: none;
-                            border-radius: 6px;
-                            width: 100%;
-                            height: 100%;
-                            background-color: #FFE5E5;
-                            color: $primaryColor;
-                            cursor: pointer;
-                        }
-
-                        .arrow {
-                            box-sizing: border-box;
-                            position: absolute;
-                            display: block;
-                            top: 17px;
-                            right: 17px;
-                            width: 18px;
-                            height: 13px;
-                            background-image: url("data:image/svg+xml,%3Csvg width='18' height='13' viewBox='0 0 19 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.439 1.05496C11.4827 0.948841 11.552 0.855181 11.6407 0.782314C11.7294 0.709448 11.8347 0.659637 11.9473 0.637315C12.0599 0.614994 12.1762 0.620855 12.286 0.654378C12.3958 0.6879 12.4955 0.748043 12.5765 0.829451L18.1452 6.39745C18.21 6.4621 18.2615 6.53891 18.2966 6.62347C18.3316 6.70802 18.3497 6.79867 18.3497 6.89022C18.3497 6.98177 18.3316 7.07242 18.2966 7.15697C18.2615 7.24153 18.21 7.31833 18.1452 7.38299L12.5765 12.951C12.4457 13.0817 12.2685 13.1551 12.0836 13.1551C11.8988 13.1551 11.7215 13.0817 11.5908 12.951C11.4601 12.8203 11.3866 12.643 11.3866 12.4582C11.3866 12.2734 11.4601 12.0961 11.5908 11.9655L15.972 7.58622H0.946095C0.761479 7.58622 0.584425 7.51289 0.453881 7.38237C0.323338 7.25184 0.25 7.07481 0.25 6.89022C0.25 6.70563 0.323338 6.5286 0.453881 6.39807C0.584425 6.26755 0.761479 6.19422 0.946095 6.19422H15.972L11.5908 1.81499C11.493 1.71762 11.4263 1.59337 11.3993 1.45804C11.3723 1.32272 11.3861 1.18241 11.439 1.05496Z' fill='%232E2A39'/%3E%3C/svg%3E%0A");
-                        }
-                    }
+                .name-input,
+                .email-input {
+                  box-sizing: border-box;
+                  position: relative;
+                  display: block;
+                  font-family: $sora-regular;
+                  padding: 10px;
+                  font-size: 15px;
+                  letter-spacing: 1px;
+                  line-height: 24px;
+                  border: none;
+                  outline: none;
+                  border-radius: 6px;
+                  width: 280px;
+                  margin-bottom: 10px;
+                  background-color: #f3f3f3;
                 }
+
+                .subscribe-btn {
+                  box-sizing: border-box;
+                  position: relative;
+                  display: block;
+                  margin-top: 20px;
+                  padding: 20px;
+                  border-radius: 20px;
+                  width: 100%;
+                  max-width: 176px;
+                  background-color: $secondaryColor;
+                  text-decoration: none;
+                  border: none;
+                  cursor: pointer;
+                  margin-bottom: 50px;
+                  color: rgb(255, 255, 255);
+                  font-family: $sora-semi-bold;
+                  font-size: 16px;
+
+                  &:hover {
+                    background-color: $purpleColor;
+                    color: $secondaryColor;
+                  }
+                }
+
+                input::placeholder {
+                  color: #3f3f3f9c;
+                }
+              }
 
                 @media only screen and (max-width: 720px) {
                     .subscribe-btn {
                         margin: 0 auto;
+                }
+                .name-input,
+                .email-input {
+                    margin: 0 auto;
                 }
             }
 
@@ -152,13 +139,20 @@
                         display: inline-block;
                         vertical-align: middle;
                         padding: 0px;
+                        cursor: pointer;
+                        text-decoration: none;
+                        color: $purpleColor;
+                    }
+
+                    .name:hover {
+                        left: 5px;
                     }
                 }
-
-                .item:hover {
-                    left: 5px;
-                }
             }
+        }
+        .col2 {
+           position: absolute;
+           right: 30px;
         }
     }
 
@@ -174,6 +168,12 @@
                 position: relative;
                 display: block;
                 padding-top: 50px;
+                margin: 0 auto;
+
+
+        }
+        .col2 {
+            right: 0;
         }
     }
 }
@@ -183,24 +183,25 @@
             position: relative;
             display: block;
             text-align: center;
-            padding: 30px 0 10px 0;
+            padding: 30px 0px 10px 0px;
 
             .icon {
                 box-sizing: border-box;
                 position: relative;
                 display: inline-block;
+                margin: 0 20px;
             }
 
             .icon1 {
-                height: 44px;
-                width: 44px;
-                background-image: url("data:image/svg+xml,%3Csvg width='44' height='44' viewBox='0 0 44 44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_4_3904)'%3E%3Cpath d='M29.6154 13H14.3846C13.6196 13 13 13.6196 13 14.3846V29.6154C13 30.3804 13.6196 31 14.3846 31H29.6154C30.3804 31 31 30.3804 31 29.6154V14.3846C31 13.6196 30.3804 13 29.6154 13ZM19.2308 26.1538C19.2308 26.5363 18.921 26.8462 18.5385 26.8462C18.156 26.8462 17.8462 26.5363 17.8462 26.1538V20.6154C17.8462 20.2329 18.156 19.9231 18.5385 19.9231C18.921 19.9231 19.2308 20.2329 19.2308 20.6154V26.1538ZM18.5385 19.2308C17.9647 19.2308 17.5 18.7661 17.5 18.1923C17.5 17.6186 17.9647 17.1538 18.5385 17.1538C19.1122 17.1538 19.5769 17.6186 19.5769 18.1923C19.5769 18.7661 19.1122 19.2308 18.5385 19.2308ZM26.8462 26.1538C26.8462 26.5363 26.5363 26.8462 26.1538 26.8462C25.7713 26.8462 25.4615 26.5363 25.4615 26.1538V23.0385C25.4615 22.0822 24.687 21.3077 23.7308 21.3077C22.7745 21.3077 22 22.0822 22 23.0385V26.1538C22 26.5363 21.6902 26.8462 21.3077 26.8462C20.9252 26.8462 20.6154 26.5363 20.6154 26.1538V20.6154C20.6171 20.2329 20.9287 19.9248 21.3112 19.9265C21.6313 19.9283 21.9091 20.1489 21.9818 20.4613C23.4054 19.4956 25.343 19.8668 26.3088 21.2904C26.6584 21.8062 26.8462 22.4154 26.8462 23.0385V26.1538Z' fill='%23E1B0C1'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_4_3904'%3E%3Crect width='18' height='18' fill='white' transform='translate(13 13)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                height: 66px;
+                width: 66px;
+                background-image: url("../../media/imgs/fb_icon.svg");
             }
-
             .icon2 {
-                height: 44px;
-                width: 44px;
-                background-image: url("data:image/svg+xml,%3Csvg width='44' height='44' viewBox='0 0 44 44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_4_3907)'%3E%3Cpath d='M30.5439 17.5932C30.3904 17.0296 29.9573 16.5699 29.3795 16.3574C26.6249 15.3596 22.2406 15.3687 21.9995 15.3687C21.7584 15.3687 17.3742 15.3596 14.6195 16.3574C14.0417 16.5699 13.6086 17.0296 13.4551 17.5932C13.247 18.3453 12.9995 19.7199 12.9995 22.0002C12.9995 24.2806 13.247 25.6551 13.4551 26.4072C13.6086 26.9709 14.0417 27.4313 14.6195 27.6439C17.2584 28.5987 21.3888 28.6318 21.9465 28.6318H22.0525C22.6102 28.6318 26.743 28.5987 29.3795 27.6439C29.9573 27.4313 30.3904 26.9709 30.5439 26.4072C30.752 25.6536 30.9995 24.2806 30.9995 22.0002C30.9995 19.7199 30.752 18.3453 30.5439 17.5932ZM24.7493 22.2512L20.8922 24.6627C20.7443 24.7554 20.545 24.7177 20.4462 24.579C20.4109 24.5293 20.3924 24.4713 20.3924 24.4117V19.5888C20.3924 19.4222 20.5362 19.2873 20.7138 19.2873C20.7773 19.2873 20.8392 19.3046 20.8922 19.3378L24.7493 21.7493C24.8972 21.8412 24.9374 22.0289 24.8385 22.1675C24.8152 22.2007 24.7847 22.2293 24.7493 22.2512Z' fill='%23E1B0C1'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_4_3907'%3E%3Crect width='18' height='18' fill='white' transform='translate(12.9995 13)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                height: 62px;
+                width: 75px;
+                background-image: url("../../media/imgs/footer_logo.svg");
+                background-size: cover;
             }
 
         }
@@ -209,11 +210,12 @@
             box-sizing: border-box;
             position: relative;
             display: block;
-            color: #FDFBF7;
+            color: rgb(0, 0, 0);
             font-size: 10px;
             text-align: center;
             letter-spacing: 0.7px;
             line-height: 17px;
+            padding: 30px;
         }
     }
 }

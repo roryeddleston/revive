@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //Pages
 import Home from "./pages/home/main";
-import About from "./pages/about/main";
 import Events from "./pages/events/main";
 import Trustees from "./pages/trustees/main";
 import Volunteer from "./pages/volunteer/main";
@@ -17,7 +16,6 @@ export default function Web() {
         <BrowserRouter basename="/">
             <Routes>
                 <Route index element={<Home />} />
-                <Route path="about" element={<About />}/>
                 <Route path="events" element={<Events />}/>
                 <Route path="trustees" element={<Trustees />}/>
                 <Route path="volunteer" element={<Volunteer />}/>

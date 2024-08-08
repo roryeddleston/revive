@@ -1,3 +1,9 @@
 {
-
+    "volunteer": {
+        "heading": "Volunteer with us",
+        "body": [
+            "Want to get involved and make a real difference? We would love for you to get in touch.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada odio et ultrices pharetra. Sed a imperdiet tellus. Morbi a pretium nisi."
+        ]
+    }
 }
