@@ -8,13 +8,13 @@
     margin: 0px auto;
     width: 100%;
     min-height: 100vh;
-    background-image: url(.//..//..//media/imgs/hands_bg.svg);
+    background-image: url(.//..//..//media/imgs/home_bg_v2.svg);
     background-attachment: fixed;
     background-size: cover;
-    padding: 50px;
+    padding: 40px;
 
     @media only screen and (max-width: 1100px) {
-        padding: 30px;
+        padding: 20px;
     }
 
     .content {
@@ -22,7 +22,7 @@
         position: relative;
         display: block;
         animation: fadeIn 0.5s ease-in;
-        background-color: rgba(255, 255, 255, 0.97);
+        background-color: rgba(255, 255, 255, 0.95);
         border-radius: 0 0 10px 10px;
 
         .inner-content {

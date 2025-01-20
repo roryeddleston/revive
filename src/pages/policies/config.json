@@ -1,0 +1,17 @@
+{
+    "policies": {
+        "heading": "Our Policies",
+        "body": [
+            "Explore our key policies to understand how we operate and ensure compliance.",
+            "Click on a policy to view the full document."
+        ],
+        "list": [
+            { "name": "Data Protection and Confidentiality Policy", "file": "/Data-protection-and-confidentiality-policy.pdf", "description": "How we handle your personal data." },
+            { "name": "Equal Opportunities Policy", "file": "/Equal-opportunities-policy.pdf", "description": "Legal agreement for using our services." },
+            { "name": "Revive Safeguarding Policy", "file": "/Revive-safeguarding-policy.pdf", "description": "How we protect those in our care." },
+            { "name": "Revive Purpose and Aims", "file": "/Revive-purpose-and-aims.pdf", "description": "Our mission and objectives." },
+            { "name": "Safeguarding Policy - New Life Church Coalville", "file": "/Safeguarding-policy-new-life-church-coalville.pdf", "description": "Safeguarding measures for New Life Church." },
+            { "name": "Volunteers Code of Conduct", "file": "/Volunteers-code-of-conduct.pdf", "description": "Guidelines for volunteers working with us." }
+        ]
+    }
+}

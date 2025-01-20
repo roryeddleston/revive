@@ -1,19 +1,8 @@
 {
-    "events": [
-      {
-        "image": "path/to/image1.jpg",
-        "title": "Event 1",
-        "description": "Description for event 1"
-      },
-      {
-        "image": "path/to/image2.jpg",
-        "title": "Event 2",
-        "description": "Description for event 2"
-      },
-      {
-        "image": "path/to/image3.jpg",
-        "title": "Event 3",
-        "description": "Description for event 3"
-      }
-    ]
-  }
+    "events": {
+        "heading": "Upcoming events",
+        "body": [
+            "We have an group on the first Tuesday of every month. Please join us!"
+        ]
+    }
+}

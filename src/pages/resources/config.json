@@ -1,0 +1,107 @@
+{
+    "resources": {
+      "heading": "Available to borrow",
+      "body": [
+        "We have a range a of different resources that you can borrow. Check out the PDF below to see the different activity packs."
+      ],
+      "buttonText": "Activity packs",
+      "images": [
+        {
+          "src": "resources_img_1",
+          "alt": "resources image 1"
+        },
+        {
+          "src": "resources_img_2",
+          "alt": "resources image 2"
+        },
+        {
+          "src": "resources_img_3",
+          "alt": "resources image 3"
+        },
+        {
+          "src": "resources_img_4",
+          "alt": "resources image 4"
+        },
+        {
+          "src": "resources_img_5",
+          "alt": "resources image 5"
+        },
+        {
+          "src": "resources_img_6",
+          "alt": "resources image 6"
+        },
+        {
+          "src": "resources_img_7",
+          "alt": "resources image 7"
+        },
+        {
+          "src": "resources_img_8",
+          "alt": "resources image 8"
+        },
+        {
+          "src": "resources_img_9",
+          "alt": "resources image 9"
+        },
+        {
+          "src": "resources_img_10",
+          "alt": "resources image 10"
+        },
+        {
+            "src": "resources_img_11",
+            "alt": "resources image 11"
+          },
+          {
+            "src": "resources_img_12",
+            "alt": "resources image 12"
+          },
+          {
+            "src": "resources_img_13",
+            "alt": "resources image 13"
+          },
+          {
+            "src": "resources_img_14",
+            "alt": "resources image 14"
+          },
+          {
+            "src": "resources_img_15",
+            "alt": "resources image 15"
+          },
+          {
+            "src": "resources_img_16",
+            "alt": "resources image 16"
+          },
+          {
+            "src": "resources_img_17",
+            "alt": "resources image 17"
+          },
+          {
+            "src": "resources_img_18",
+            "alt": "resources image 18"
+          },
+          {
+            "src": "resources_img_19",
+            "alt": "resources image 19"
+          },
+          {
+            "src": "resources_img_20",
+            "alt": "resources image 20"
+          },
+          {
+            "src": "resources_img_21",
+            "alt": "resources image 21"
+          },
+          {
+            "src": "resources_img_22",
+            "alt": "resources image 22"
+          },
+          {
+            "src": "resources_img_23",
+            "alt": "resources image 23"
+          },
+          {
+            "src": "resources_img_24",
+            "alt": "resources image 24"
+          }
+      ]
+    }
+  }

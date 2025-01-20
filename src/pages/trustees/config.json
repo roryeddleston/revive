@@ -1,29 +1,33 @@
 {
     "trusteesTitle": "Meet the Trustees",
-    "trusteesText": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada odio et ultrices pharetra. Sed a imperdiet tellus. Morbi a pretium nisi. In accumsan efficitur diam, nec porttitor orci pretium vitae. Phasellus eget vulputate dui, et dictum dolor. Vivamus rutrum commodo odio, ut auctor leo porttitor nec. Etiam at viverra enim, quis dictum sapien. "
-    ],
     "trustees": [
       {
-        "name": "Trustee 1",
-        "image": "path/to/image1.jpg",
-        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et."
+          "name": ["Laura Wydell", "Director & Trustee"],
+          "image": "trustee_1",
+          "bio": [
+              "Laura launched Revive Support hub in November 2022 with New Life Church, Coalville. She has a son who is autistic and a daughter who is somewhere on the spectrum but does not have a diagnosis. She has a passion for helping parents navigate the education system that is so desperately broken. Laura had a PGCert in SEN & Inclusion and a degree In teaching and Learning so has gained a lot of experience working with children with SEN. Laura is a Christian and has a clear vision for growing Revive so that more parents can access support."
+          ]
       },
       {
-        "name": "Trustee 2",
-        "image": "path/to/image2.jpg",
-        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et."
+          "name": ["Rev Jill Willett", "Trustee"],
+          "image": "trustee_2",
+          "bio": [
+              "Rev Jill Willett is a Baptist Minister, currently working as a prison Chaplain in HMP Leicester, where she encounters a number of adults who are on the autistic spectrum. She has two adult sons, who she fostered and then adopted. For four years this was as a single parent after she was widowed when the boys were 10 and 11yrs. Her youngest was 6 years old when they first met. He eventually got diagnosed with SEN and went to a Special School in Northumberland, then to Maplewell School when they moved to Leicestershire. Jill volunteered at the Northumberland school as a parent helper, and is well aware of how vital good support is for families. Her and her husband are Godparents to Laura’s children."
+          ]
       },
       {
-        "name": "Trustee 3",
-        "image": "path/to/image3.jpg",
-        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et."
-      },
-      {
-        "name": "Trustee 4",
-        "image": "path/to/image4.jpg",
-        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et."
-      }
-    ]
+        "name": ["Louise Lonsdale-Ellis", "Trustee"],
+        "image": "trustee_3",
+        "bio": [
+            "Louise is the owner/manager of an early years setting with over 30 years of experience in the education sector. Much of this is within early years and special educational needs. She has a BA Honours Degree in Early Childhood and Special Education and is a trained Autism Practitioner."
+        ]
+    },
+    {
+      "name": ["Carly Baugh", "Trustee"],
+      "image": "trustee_4",
+      "bio": [
+          "Carly is an experienced administration and human resources professional bringing a wealth of knowledge gained from working both in NHS and education settings. As a family friend to Laura, she has witnessed the difficulties that parents can experience in accessing help; and is therefore keen to provide behind-the-scenes administrative support to Revive, as well as taking the role of Treasurer for the Charity."
+      ]
+  }
+  ]
   }

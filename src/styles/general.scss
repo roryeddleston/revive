@@ -10,14 +10,48 @@ body {
     padding: 0px;
     background: #F8F9FA;
     font-family: $sora-regular;
-    color: $primaryColor;
+    color: $primaryColour;
 
-    h2 {
-        font-family: $sora-semi-bold;
-    }
 
     .bold {
         font-family: $sora-extra-bold;
+    }
+
+    .page-heading {
+        font-size: 56px;
+        margin: 0;
+        padding: 20px 0;
+        text-align: center;
+
+        @media (max-width: 768px) {
+            font-size: 42px;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 10px 0;
+        }
+    }
+
+    .green-btn {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        margin-top: 20px;
+        padding: 16px;
+        border-radius: 12px;
+        width: 100%;
+        max-width: 176px;
+        background-color: $secondaryColour;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 50px;
+        color: white;
+        font-family: $sora-semi-bold;
+        font-size: 16px;
+
+        &:hover {
+            background-color: $purpleColour;
+        }
     }
 
 }

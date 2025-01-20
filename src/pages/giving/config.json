@@ -1,0 +1,30 @@
+{
+    "giving": {
+        "heading": "Giving",
+        "body": "Thank you so much for your support!",
+        "transfer": {
+            "description": "💚 Preferred Method: Bank Transfer (Lowest Fees)",
+            "accountDetails": {
+                "accountName": "Account Name: Revive",
+                "sortCode": "Sort code: 60-06-02",
+                "accountNumber": "Account number: 26766558"
+            }
+        },
+        "sections": [
+            {
+                "title": "Play our community lottery to earn money for Revive!",
+                "link": {
+                    "text": "NWL community lottery",
+                    "url": "https://www.nwlcommunitylottery.co.uk/support/revive-support-hub?utm_campaign=cause-page-social-share&utm_source=cause-page&utm_medium=social&utm_content=Hyperlink&fbclid=IwY2xjawEmyfFleHRuA2FlbQIxMQABHU19x2BrwXGXjklGsMFkCB8e_fXokKQUxSH_kTfuCT9XprqZzL5qaoMJ5g_aem_-a7bscRHdzv6pm6ajRA_KA  "
+                }
+            },
+            {
+                "title": "Sign up to easy fund raising and every time you shop online with them Revive gets a donation! ",
+                "link": {
+                    "text": "Easy fundraising",
+                    "url": "https://www.easyfundraising.org.uk/panel "
+                }
+            }
+        ]
+    }
+}

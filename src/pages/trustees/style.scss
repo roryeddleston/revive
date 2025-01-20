@@ -6,84 +6,102 @@
     box-sizing: border-box;
     position: relative;
     display: block;
+    background-color: #f9f9f9;
+    margin: 0;
 
-  .trustees-container {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    width: 100%;
-    margin: 0px auto;
-    padding: 30px;
-    text-align: center;
-    border-radius: 10px;
+    .trustees-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 30px;
 
-    h1 {
-      box-sizing: border-box;
-      position: relative;
-      display: block;
-      font-size: 2.5em;
-      margin: 20px auto 40px auto;
+        .trustees-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+            padding: 50px 100px;
+
+            .trustee-card {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                background: #fff;
+                border-radius: 24px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                padding: 5rem 0rem 5rem 5rem;
+                margin: 0 auto 2rem auto;
+
+                &.image-left {
+                    flex-direction: row;
+                    padding: 5rem 2rem 5rem 5rem;
+                }
+
+                &.image-right {
+                    flex-direction: row-reverse;
+                    padding: 5rem 5rem 5rem 2rem;
+                }
+
+                .trustee-image {
+                    width: 100%;
+                    min-width: 100px;
+                    max-width: 250px;
+                    border-radius: 20px;
+                    object-fit: cover;
+                    height: auto;
+                }
+
+                .trustee-bio {
+                    width: 60%;
+
+                    h2 {
+                        font-size: 1.5rem;
+                        color: #333;
+                        font-family: $sora-semi-bold;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        line-height: 1.5;
+                        color: #555;
+                        margin-top: 2rem;
+                        letter-spacing: 0.4px;
+                    }
+                }
+            }
+        }
     }
 
-    .paragraphs {
+    /* Responsive styles */
+    @media (max-width: 1000px) {
+        .trustees-container {
+            padding: 0;
 
-        margin-bottom: 100px;
-        p {
-            margin: 20px auto;
-            font-size: 1.1em;
-            line-height: 1.6;
-            max-width: 800px;
-          }
+            .trustees-cards {
+                padding: 0;
+                gap: 2rem;
+
+                .trustee-card {
+                    flex-direction: column !important;
+                    text-align: left;
+                    padding: 4rem;
+                    background: none;
+                    box-shadow: none;
+                    gap: 1rem;
+
+                &.image-left,&.image-right {
+                    padding: 1rem 3rem;
+                }
+
+                    .trustee-image,
+                    .trustee-bio {
+                        width: 100%;
+                    }
+
+                    .trustee-image {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
     }
-
-    .trustees-cards {
-      box-sizing: border-box;
-      position: relative;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    //   gap: 20px;
-      background: #f3f3f3;
-      width: 100%;
-      margin: 0px;
-      padding: 100px;
-
-      .trustee-card {
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        box-sizing: border-box;
-        text-align: center;
-        width: calc(25% - 20px); /* 4 cards in a row on larger screens */
-
-        @media only screen and (max-width: 1024px) {
-          width: calc(50% - 20px); /* 2 cards in a row on medium screens */
-        }
-
-        @media only screen and (max-width: 768px) {
-          width: 100%; /* 1 card per row on smaller screens */
-        }
-
-        .trustee-image {
-          max-width: 100%;
-          height: auto;
-          border-radius: 50%;
-          margin-bottom: 15px;
-        }
-
-        .trustee-name {
-          font-size: 1.5em;
-          margin-bottom: 10px;
-          font-weight: bold;
-        }
-
-        .trustee-bio {
-          font-size: 1em;
-          color: #666;
-        }
-      }
-    }
-  }
 }
 

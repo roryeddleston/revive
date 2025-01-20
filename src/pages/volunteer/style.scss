@@ -6,22 +6,17 @@
     box-sizing: border-box;
     position: relative;
     display: block;
+    background-color: #f9f9f9;
+    margin: 0;
 
     .volunteer-container {
         box-sizing: border-box;
         position: relative;
         display: block;
-        min-height: 500px;
-        padding: 30px 50px;
+        padding: 0 50px 50px 50px;
         margin: 0 auto;
         text-align: center;
-
-        .heading {
-            box-sizing: border-box;
-            position: relative;
-            display: block;
-            font-size: 40px;
-        }
+        max-width: 1100px;
 
         .paragraphs {
             box-sizing: border-box;
@@ -29,8 +24,93 @@
             display: block;
             font-size: 1.1em;
             line-height: 1.6;
-            max-width: 800px;
             margin: 0 auto;
+        }
+
+        #join-team-btn {
+            margin: 30px auto;
+        }
+
+        .volunteers {
+            padding: 50px 0 60px 0;
+            display: flex;
+            flex-direction: column;
+
+            .volunteer-card {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin: 0px;
+                padding: 20px;
+
+                &.left-align {
+                    flex-direction: row;
+                }
+
+                &.right-align {
+                    flex-direction: row-reverse;
+                }
+
+                img.volunteer-image {
+                    max-width: 210px;
+                    width: 100%;
+                    height: auto;
+                    border-radius: 15px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    margin: 0px 30px 0px 20px;
+                }
+
+                .paragraphs {
+                    flex: 1;
+                    text-align: justify;
+                    padding-top: 20px;
+                }
+
+                @media (max-width: 1000px) {
+                    flex-direction: column !important;
+                    align-items: center;
+
+                    .volunteer-card {
+                        padding: 0 !important;
+
+                        &.left-align {
+                            padding: 0 !important;
+                        }
+
+                        &.right-align {
+                            padding: 0 !important;
+                        }
+                    }
+
+                    img.volunteer-image {
+                        margin: 30px 0 10px 0;
+                        max-width: 300px;
+                    }
+
+                    .paragraphs {
+                        padding: 10px;
+                    }
+                }
+            }
+
+            @media (max-width: 1000px) {
+
+                flex-direction: column !important;
+                align-items: center;
+
+                .volunteer-card {
+                    padding: 0 !important;
+                }
+
+                img.volunteer-image {
+                    margin: 30px 0 10px 0;
+                    max-width: 300px;
+                }
+
+                .paragraphs {
+                    padding: 10px;
+                }
+            }
         }
     }
 

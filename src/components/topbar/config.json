@@ -1,15 +1,11 @@
 {
     "tabs": [
         {
-            "name": "About Us",
-            "url": "/"
-        },
-        {
             "name": "Events",
             "url": "/events"
         },
         {
-            "name": "Meet the trustees",
+            "name": "Trustees",
             "url": "/trustees"
         },
         {
@@ -17,8 +13,24 @@
             "url": "/volunteer"
         },
         {
+            "name": "Signposting",
+            "url": "/signposting"
+        },
+        {
+            "name": "Gallery",
+            "url": "/gallery"
+        },
+        {
+            "name": "Resources",
+            "url": "/resources"
+        },
+        {
             "name": "Contact",
             "url": "/contact"
+        },
+        {
+            "name": "Donate",
+            "url": "/giving"
         }
     ]
 }

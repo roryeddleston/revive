@@ -3,176 +3,36 @@
 @import "../../styles/colours";
 
 .events {
-  box-sizing: border-box;
-  position: relative;
-  display: block;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    margin: 0;
 
-  .events-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    overflow: hidden;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding: 0 25px 0px 25px;
-
-    @media only screen and (max-width: 1100px) {
-      flex-direction: column;
-      height: auto;
-    }
-
-    .events-block-1, .events-block-2 {
-      box-sizing: border-box;
-      position: relative;
-      display: block;
-      flex: 1;
-      overflow: hidden;
-      // margin: 0 30px;
-      padding: 30px;
-    }
-
-    .events-block-1 {
-      flex: 1.4;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      @media only screen and (max-width: 1100px) {
-        margin: 35px 0 35px 0;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
-    }
-
-    .events-block-2 {
-      display: flex;
-      flex-direction: column;
-      justify-content: top;
-      align-items: flex-start;
-      position: relative;
-
-      .events-heading {
-
-        width: 100%;
-        border-bottom: 2px solid #ccc;
-
-        h2 {
-          margin: 0;
-          font-size: 35px;
-          padding-bottom: 10px;
-          max-width: 300px;
-          font-family: $sora-regular;
-
-          span {
-            font-family: $sora-extra-bold;
-          }
-        }
-      }
-
-      .events-list-container {
-        display: flex;
+    .events-container {
         box-sizing: border-box;
         position: relative;
-        flex-direction: column;
-        margin-top: 30px;
-        width: 100%;
-        background-color: #f0f0f0;
-        border-radius: 20px;
-        padding: 20px;
-      }
+        display: block;
+        margin: 0 auto;
+        padding: 0 30px 100px 30px;
+        text-align: center;
 
-      .event-card {
-        display: flex;
-        box-sizing: border-box;
-        position: relative;
-        align-items: center;
-        background: white;
-        border-radius: 10px;
-        padding: 40px 30px;
-        margin: 20px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-        .event-image {
-          box-sizing: border-box;
-          position: relative;
-          display: block;
-          max-width: 150px;
-          height: auto;
-          border-radius: 10px;
-          margin-right: 20px;
+        .paragraphs {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 0 auto;
         }
 
-        .event-details {
-          flex: 1;
-
-          h3 {
-            margin: 0 0 10px;
-            font-size: 18px;
-            font-weight: bold;
-          }
-
-          p {
-            margin: 0;
-            font-size: 14px;
-            color: #666;
-          }
+        .image-block-1, .image-block-2 {
+            img {
+                margin-top: 40px;
+                max-width: 700px;
+                height: auto;
+                width: 100%;
+                border-radius: 30px;
+            }
         }
-
-        .book-now-btn {
-          box-sizing: border-box;
-          position: relative;
-          display: block;
-          background-color: $purpleColor;
-          color: white;
-          border: none;
-          padding: 10px 20px;
-          border-radius: 5px;
-          cursor: pointer;
-          transition: background-color 0.3s;
-
-          &:hover {
-            background-color: darken($purpleColor, 10%);
-          }
-        }
-      }
     }
-  }
-
-  @media only screen and (max-width: 720px) {
-    .events-block-1 {
-      padding: 30px;
-      margin-right: 0;
-
-      .heading {
-        font-size: 54px;
-      }
-
-      .paragraphs {
-        padding-top: 20px;
-      }
-    }
-
-    .events-block-2 {
-      margin-top: 25px;
-
-      .event-card {
-        flex-direction: column;
-        align-items: flex-start;
-
-        .event-image {
-          margin-bottom: 10px;
-          margin-right: 0;
-          max-width: 100%;
-        }
-
-        .book-now-btn {
-          align-self: center;
-        }
-      }
-    }
-  }
 }

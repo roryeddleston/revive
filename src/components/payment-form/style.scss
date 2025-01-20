@@ -1,0 +1,24 @@
+@import "../../styles/fonts";
+@import "../../styles/animations";
+@import "../../styles/colours";
+
+form {
+    .card-input {
+        padding: 12px;
+        margin: 40px 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        transition: border-color 0.3s;
+
+        &:focus-within {
+          border-color: $secondaryColour;
+          box-shadow: 0 0 5px rgba($secondaryColour, 0.5);
+        }
+      }
+
+    #donate-now {
+        margin: 30px auto;
+    }
+}

@@ -72,15 +72,16 @@
                 line-height: 30px;
                 border-radius: 10px;
                 border: none;
-                background-color: #ffe5e5;
-                color: $primaryColor;
+                background-color: $secondaryColour;
+                color: $primaryColour;
                 text-decoration: none;
                 text-align: center;
                 cursor: pointer;
             }
 
             .home-btn:hover {
-                background-color: #fdd8d8;
+                background-color: $purpleColour;
+                color: $secondaryColour;
                 transition: background-color 0.3s;
             }
         }

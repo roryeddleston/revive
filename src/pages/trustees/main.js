@@ -5,29 +5,27 @@ import media from '../../media';
 import Layout from "../../components/layout/main";
 import AnimationOnScroll from '../../components/animation-on-scroll/main';
 
-export default function Trustees(props) {
+export default function Trustees() {
     return (
         <div className="trustees">
-            <Layout pageId={2}>
+            <Layout pageId={1}>
                 <div className="trustees-container">
-                    <h1>{config.trusteesTitle}</h1>
-                    <div className="paragraphs">
-                        {config.trusteesText.map((paragraph, index) => (
-                            <p key={index}>{paragraph}</p>
-                        ))}
-                    </div>
-
+                    <h1 className="page-heading">{config.trusteesTitle}</h1>
                     <div className="trustees-cards">
                         {config.trustees.map((trustee, index) => (
-                            <div key={index} className="trustee-card">
-                                <img src={trustee.image} alt={trustee.name} className="trustee-image"/>
-                                <h3 className="trustee-name">{trustee.name}</h3>
-                                <p className="trustee-bio">{trustee.bio}</p>
+                            <div key={index} className={`trustee-card ${index % 2 === 0 ? 'image-left' : 'image-right'}`}>
+                                <img src={media[trustee.image]} alt={trustee.name} className="trustee-image" />
+                                <div className="trustee-bio">
+                                    {trustee.name.map((namePart, i) => (
+                                            <h2 key={i}>{namePart}</h2>
+                                    ))}
+                                    <p>{trustee.bio}</p>
+                                </div>
                             </div>
                         ))}
                     </div>
                 </div>
             </Layout>
         </div>
-    )
+    );
 }

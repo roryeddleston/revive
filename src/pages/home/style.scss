@@ -8,70 +8,95 @@
     display: block;
 
     .intro-container {
+        box-sizing: border-box;
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: stretch;
         overflow: hidden;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        padding: 0 25px 100px 25px;
+        padding: 0px 50px;
 
         @media only screen and (max-width: 1100px) {
             flex-direction: column;
             height: auto;
+            padding: 0px 20px;
         }
 
         .intro-block-1, .intro-block-2 {
-            box-sizing: border-box;
             flex: 1;
             overflow: hidden;
         }
 
         .intro-block-1 {
             display: flex;
+            box-sizing: border-box;
+            position: relative;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: $purpleColor;
+            background-color: $secondaryColour;
             color: white;
             border-radius: 20px;
-            margin-right: 25px;
+            margin-right: 50px;
             padding: 30px;
 
             @media only screen and (max-width: 1100px) {
-                margin: 35px 0 35px 0;
+                margin: 0px 0 35px 0;
             }
 
             span {
                 h2 {
                     font-family: $sora-extra-bold;
+                    color: pink;
                 }
             }
 
             .heading {
-                font-size: 80px;
+                position: relative;
+                display: block;
+                font-size: 100px;
                 letter-spacing: 0.78px;
                 text-align: center;
                 margin: 0;
                 padding: 0 40px;
+                max-width: 700px;
             }
+
+            .paragraphs {
+                box-sizing: border-box;
+                position: relative;
+                display: block;
+                text-align: center;
+                max-width: 550px;
+                line-height: 40px;
+                letter-spacing: 0.8px;
+                margin: 0 auto;
+                font-size: 28px;
+            }
+
+            @media only screen and (max-width: 1500px) {
+                .heading {
+                    font-size: 85px;
+                }
+                .paragraphs {
+                    font-size: 22px;
+                }
+            }
+
             @media only screen and (max-width: 1100px) {
                 .heading {
                     font-size: 55px;
                 }
-            }
-
-            .paragraphs {
-                text-align: center;
-                max-width: 335px;
-                line-height: 29px;
-                letter-spacing: 0.6px;
-                margin: 0 auto;
+                .paragraphs {
+                    font-size: 22px;
+                }
             }
         }
 
         .intro-block-2 {
-            flex: 1.4;
+            flex: 0.8;
             display: flex;
             justify-content: right;
             align-items: center;
@@ -85,16 +110,17 @@
                 border-radius: 10px;
             }
 
-            .donate-btn {
+            .volunteer-btn {
                 position: absolute;
                 box-sizing: border-box;
                 display: block;
                 bottom: 35px;
                 right: 35px;
                 padding: 20px;
-                background-color: $secondaryColor;
+                background-color: $secondaryColour;
                 color: white;
                 border: none;
+                letter-spacing: 0.4px;
                 width: 176px;
                 border-radius: 16px;
                 font-family: $sora-semi-bold;
@@ -104,28 +130,56 @@
 
                 &:hover {
                     background-color: white;
-                    color: $secondaryColor;
+                    color: $secondaryColour;
                 }
             }
         }
     }
 
-    @media only screen and (max-width: 720px) {
-        .intro-block-1 {
-            padding: 30px;
-            margin-right: 0;
+    .story-container {
+        padding-bottom: 50px;
+
+        .story-block-1, .story-block-2 {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            padding: 30px 50px 0px 50px;
+            max-width: 1000px;
+            margin: 0 auto;
 
             .heading {
-                font-size: 54px;
+                box-sizing: border-box;
+                position: relative;
+                display: block;
+                font-size: 28px;
             }
 
             .paragraphs {
-                padding-top: 20px;
+                box-sizing: border-box;
+                position: relative;
+                display: block;
+                padding-top: 1px;
+                font-size: 18px;
+                line-height: 34px;
             }
         }
 
-        .intro-block-2 {
-            margin-top: 25px;
+        .read-more-btn {
+            font-family: $sora-semi-bold;
+            margin: 20px 0;
+            padding: 14px 22px;
+            background-color: $secondaryColour;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+
+            &:hover {
+                right: 20px;
+                background-color: darken($secondaryColour, 10%);
+            }
         }
     }
 }

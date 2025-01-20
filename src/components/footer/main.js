@@ -55,7 +55,7 @@ export default function Footer(props) {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <button className="subscribe-btn" onClick={handleSubmit}>Subscribe</button>
+                <button className="green-btn" id="subscribe-btn" onClick={handleSubmit}>Subscribe</button>
               </div>
             </form>
           </div>
@@ -63,7 +63,7 @@ export default function Footer(props) {
 
         <div className="icons">
           <a className="icon icon1" href={config.icons[0].url} target="_blank"></a>
-          <a className="icon icon2" href={config.icons[1].url}></a>
+          <a className="icon icon2" href={config.icons[1].url} ></a>
         </div>
 
         <div>

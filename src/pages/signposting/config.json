@@ -1,0 +1,128 @@
+{
+    "signposting": {
+        "heading": "Useful links",
+        "sections": [
+            {
+                "title": "New Life Church",
+                "description": "New Life Church collaborates with Revive, and everyone is welcome to attend Sunday services or various events throughout the week. Visit their website to see what’s on.",
+                "link": {
+                    "text": "Visit New Life Church",
+                    "url": "https://newlifechurchcoalville.co.uk"
+                }
+            },
+            {
+                "title": "Support",
+                "items": [
+                    {
+                        "description": "Amazing people! My son had play therapy here, and my daughter is doing the ELSA course (Emotional Literacy Support). They may be able to help with fees depending on circumstances.",
+                        "link": {
+                            "text": "Sunrise Wellbeing",
+                            "url": "https://sunrisewellbeing.co.uk"
+                        }
+                    },
+                    {
+                        "description": "EHCP headache? Tribunal jargon got you down? This website has lots of useful information and can guide you on what to do next.",
+                        "link": {
+                            "text": "Special Needs Jungle",
+                            "url": "https://www.specialneedsjungle.com"
+                        }
+                    },
+                    {
+                        "description": "Information about Children and Adults Mental Health Services (CAMHS).",
+                        "link": {
+                            "text": "Young Minds",
+                            "url": "https://www.youngminds.org.uk/young-person/your-guide-to-support/guide-to-camhs/"
+                        }
+                    },
+                    {
+                        "description": "Struggling with mental health? Visit this amazing charity for support.",
+                        "link": {
+                            "text": "Mind",
+                            "url": "https://www.mind.org.uk"
+                        }
+                    },
+                    {
+                        "description": "Talk to a professional about autism. No question is too big or too small.",
+                        "link": {
+                            "text": "Chat Autism Support",
+                            "url": "https://www.leicspart.nhs.uk/autism-space/beyond-diagnosis/chatautism-text-messaging-support-service/"
+                        }
+                    },
+                    {
+                        "description": "Need help navigating NHS services? Contact the Care Navigator for support.",
+                        "link": {
+                            "text": "NHS Care Navigation",
+                            "url": "https://www.leicspart.nhs.uk/service/care-navigation/"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Sensory Products",
+                "items": [
+                    {
+                        "description": "For good quality sensory items.",
+                        "link": {
+                            "text": "Sensory Direct",
+                            "url": "https://www.sensorydirect.com"
+                        }
+                    },
+                    {
+                        "description": "Got a diagnosis? Claim your sensory pack! This is definitely worth it, and your child will probably really enjoy the contents.",
+                        "link": {
+                            "text": "Caudwell Children",
+                            "url": "https://www.caudwellchildren.com"
+                        }
+                    },
+                    {
+                        "description": "Sensory clothing and more!",
+                        "link": {
+                            "text": "Fledglings",
+                            "url": "https://www.fledglings.org.uk/"
+                        }
+                    },
+                    {
+                        "description": "Lots of sensory toys here!",
+                        "link": {
+                            "text": "TTS Group",
+                            "url": "https://www.tts-group.co.uk"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Discounts",
+                "items": [
+                    {
+                        "description": "Grab yourself an access card for £15. If you are a carer for your child, you can request a +1 on your card to gain free entry into places.",
+                        "link": {
+                            "text": "Access Card",
+                            "url": "https://knowledge.accesscard.online"
+                        }
+                    },
+                    {
+                        "description": "You can get yourself a CEA card to gain a free place at the cinema. The card is £5 for the year.",
+                        "link": {
+                            "text": "CEA Card",
+                            "url": "https://www.ceacard.co.uk"
+                        }
+                    },
+                    {
+                        "description": "Apply for DLA. This is not based on your income at all, and if you have a disabled child, you are eligible.",
+                        "link": {
+                            "text": "Disability Living Allowance (DLA)",
+                            "url": "https://www.gov.uk/disability-living-allowance-children"
+                        }
+                    },
+                    {
+                        "description": "This is based on your income and only if you are a full-time carer for your child. If you earn more than £400 a month, this is not for you.",
+                        "link": {
+                            "text": "Carer’s Allowance",
+                            "url": "https://www.gov.uk/carers-allowance"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -3,20 +3,32 @@
     "menuTitle": "Menu",
     "menuItems": [
         {
-            "name": "About us",
-            "url": "/about"
+            "name": "Home",
+            "url": "/"
         },
         {
             "name": "Events",
             "url": "/events"
         },
         {
-            "name": "Meet the trustees",
+            "name": "Trustees",
             "url": "/trustees"
         },
         {
             "name": "Volunteer",
             "url": "/volunteer"
+        },
+        {
+            "name": "Signposting",
+            "url": "/signposting"
+        },
+        {
+            "name": "Gallery",
+            "url": "/gallery"
+        },
+        {
+            "name": "Resources",
+            "url": "/resources"
         },
         {
             "name": "Contact",
@@ -25,14 +37,10 @@
         {
             "name": "Policies",
             "url": "/policies"
-        },
-        {
-            "name": "Terms and conditions",
-            "url": "/terms"
         }
     ],
         "contact": "Contact",
-        "newsletterTitle": "Want to know more?",
+        "newsletterTitle": "Keep up to date!",
         "newsletterText": "Sign up for our newsletter",
         "icons": [
             {
